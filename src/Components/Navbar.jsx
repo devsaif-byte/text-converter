@@ -38,7 +38,9 @@ export default function Navbar(props) {
 						{/* toggle dark mode */}
 						<div className="form-check form-switch">
 							<input
-								className="form-check-input"
+								className={`form-check-input bg-${
+									mode === "dark" ? "success" : ""
+								}`}
 								type="checkbox"
 								role="switch"
 								onClick={toggleMode}
